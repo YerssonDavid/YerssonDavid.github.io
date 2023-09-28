@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navegacion{
+    display: flex;
+    position: fixed;
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(107, 86, 29);
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    margin: 0 0 2em 0;
+}
+.navegacion a{
+    text-decoration: none;
+    margin: 0 0 0 5em;
+    letter-spacing: 0.1em;
+    color: #82f3bf/*  rgb(175, 217, 25) */;
+    font-size: 1.5em;
+}
+
+a{
+    margin: auto;
+    text-decoration: none;
+    justify-content: space-between;
+}
+a:hover{
+    font-size: 1.6em;
+    color: white;
+}
+
+img{
+    width: 45em;
+    height: 40em;
+    border-radius: 0 5em 0 5em;
+    margin: 0 0 0 1em ;
+    border: solid 2px #adffa4
+}
+.encabezado {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(header2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.encabezado1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.encabezado h1{
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: rgb(175, 217, 25);
+    margin: 0 0 0.5em 0;
+}
+.encabezado p{
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em
+}
+.titulo-bogota{
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    margin: 1em 0 0 0;
+    color: rgb(107, 86, 29);
+}
+.bogota-animacion {
+    display: flex; 
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(5deg,
+    rgb(255, 255, 0),
+    rgb(5, 98, 149),
+    rgb(2, 174, 22),
+    rgb(16, 10, 1));
+    margin: 0.9em 0 2em 0;
+    animation: animacion 5s ease-in-out infinite;
+}
+#bogota{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+}
+.bogota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    gap: 3em;
+}
+.bogota h2{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: black;
+    margin: 0 0 1em 0;
+}
+.bogota p{
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+}
+
+@keyframes animacion{
+    0% {
+        transform: translateX(1);
+    }
+
+    50% {
+        transform: scaleX(0.2);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+#pereira{
+    height: 110vh;
+    background-color: #d4f3e4;
+    /* margin: 1em 0; */
+}
+.pereira{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.pereira h2{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: black;
+    margin: 0 0 1em 0;
+}
+.pereira p{
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+    margin: 0 0.5em;
+}
+.manizales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.manizales h2{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: black;
+    margin: 0 0 1em 0;
+}
+.manizales p{
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+    margin: 0 0.5em;
+}
+footer{
+    background-color: #d4f3e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 740px){
+    .navegacion{
+        display: flex;
+        position: fixed;
+        height: 20vh;
+        width: 100%;
+        /* margin: auto; */
+        background-color: rgb(227, 222, 222);
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+    a{
+        margin: 0;
+    }
+    .navegacion a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0 0.4em; */
+    }
+
+    @media (max-width: 800px){
+        .navegacion{
+            display: flex;
+            position: fixed;
+            height: 20vh;
+            width: 100%;
+            /* margin: auto; */
+            background-color: rgb(107, 86, 29);
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+        }
+        a{
+            margin: 0;
+        }
+        .navegacion a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5em;
+            /* padding: 0 0.4em; */
+        }}
+    }
+    @media (max-width: 1100px){
+            /*Bogota*/
+            #bogota{
+                height: 100%;
+            }
+            .bogota{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #pereira{
+                height: 100%;
+            }
+            .pereira{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            img{
+            width: 35em;
+            height: 30em;
+            margin: auto 20%;
+            border: solid 2px #adffa4;
+            }
+            #manizales{
+            height: 100%;
+            }
+            .manizales{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+}

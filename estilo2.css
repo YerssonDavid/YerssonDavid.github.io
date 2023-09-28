@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navegacion{
+    display: flex;
+    position: fixed;
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-color: #ffff8e/* rgb(227, 222, 222) */;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    margin: 0 0 2em 0;
+}
+.navegacion a{
+    text-decoration: none;
+    margin: 0 0 0 5em;
+    letter-spacing: 0.1em;
+    color: black;
+    font-size: 1.5em;
+}
+
+a{
+    margin: auto;
+    text-decoration: none;
+    justify-content: space-between;
+}
+a:hover{
+    font-size: 1.6em;
+    color: #05808D;
+}
+
+img{
+    width: 45em;
+    height: 40em;
+    border-radius: 5em 0 5em 0;
+    border: solid 0.2em #ffff8e;
+    margin: 0 0 0 1em ;
+}
+.encabezado {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(footer2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.encabezado1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.encabezado h1{
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: #FADE3C;    /* rgb(175, 217, 25 */
+    margin: 0 0 0.5em 0;
+}
+.encabezado p{
+    font-family: cursive;
+    font-weight: bold;
+    color: #8bdaff;
+    font-size: 1.5em;
+    margin: 0 10%;
+}
+.titulo-bogota{
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    margin: 1em 0 0 0;
+    color: #FADE3C;
+}
+.bogota-animacion {
+    display: flex; 
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(5deg,
+    #FADE3C,
+    #adffa4,
+    #d6ff99,
+    #fcff9d);
+    margin: 0.9em 0 2em 0;
+    animation: animacion 5s ease-in-out infinite;
+}
+#bogota{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+}
+.bogota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    gap: 3em;
+}
+.bogota h2{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: black;
+    margin: 0 0 1em 0;
+}
+.bogota p{
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+}
+
+@keyframes animacion{
+    0% {
+        transform: translateX(1);
+    }
+
+    50% {
+        transform: scaleX(0.2);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+#pereira{
+    height: 110vh;
+    background-color: #feffe2;
+    /* margin: 1em 0; */
+}
+.pereira{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.pereira h2{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: black;
+    margin: 0 0 1em 0;
+}
+.pereira p{
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+    margin: 0 0.5em;
+}
+.manizales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.manizales h2{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: black;
+    margin: 0 0 1em 0;
+}
+.manizales p{
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+    margin: 0 0.5em;
+}
+footer{
+    /* background-color: #ffff8e; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(footer3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+}
+@media (max-width: 800px){
+    .navegacion{
+        display: flex;
+        position: fixed;
+        height: 20vh;
+        width: 100%;
+        /* margin: auto; */
+        background-color: #ffff8e;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+    a{
+        margin: 0;
+    }
+    .navegacion a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5em;
+        /* padding: 0 0.4em; */
+    }
+}
+@media (max-width: 1100px){
+        /*Bogota*/
+        #bogota{
+            height: 100%;
+        }
+        .bogota{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #pereira{
+            height: 100%;
+        }
+        .pereira{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        img{
+        width: 35em;
+        height: 30em;
+        margin: auto 20%;
+        }
+        #manizales{
+        height: 100%;
+        }
+        .manizales{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+}

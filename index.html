@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./Imagenes/Biarno86T.png">
+    <title>Adopta Ya!</title>
+</head>
+
+<body>
+    <section class="navegacion">
+        <div class="nave">
+            <img src="./Logo3.png" alt="Logo">
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre nosotros</a>
+                <a href="#adopcion">Adopcion de mascotas</a>
+                <a href="#reportar">Reportar abandono</a>
+                <a href="#ayuda">Donaciones</a>
+            </nav>
+        </div>
+    </section>
+
+    <section id="inicio" class="carrousel"> 
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./foto1.png" class="d-block w-100" alt="Fotografia perrito">
+            </div>
+            <div class="carousel-item">
+                <img src="./foto2.png" class="d-block w-100" alt="Fotografia perrito">
+            </div>
+            <div class="carousel-item">
+                <img src="./foto3.jpg" class="d-block w-100" alt="Fotografia perrito">
+            </div>
+            <div class="carousel-item">
+                <img src="./foto4.jpg" alt="Fotografia perrito">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+            <div class="text-inicio">
+                <h2>Direcciones</h2>
+                <br>
+                <address>
+                    Calle 127 # 64 - Bogotá D.C <br>
+                    Carrera 34 # 72 - Pereira <br>
+                    Calle 24 # 45 - Manizales <br>
+                </address>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="sobre" class="sobre-nosotros">
+        <div class="animacion">
+            <h1>Sobre nosotros</h1>
+        </div>
+        <div class="img-text-sobre">
+            <div class="sobre">
+                <img src="./Logo2.jpg" alt="Logo-post">
+            </div>
+            <div class="text-sobre">
+                <p>Nuestra empresa nacio en el año 2022, gracias a nuestro fundador Yersson David Forero Diaz
+                    varios peluditos han tenido segundas oportunidades, se les a dado el cariño que nunca les dieron.
+                    Nuestro objetivo es realizar una fundacion nacional, la cual tengamos acceso a los sitios de menos
+                    acceso en el pais, llegar a lugares donde en verdad nuestros amigos peludos necesiten ayuda. Por el
+                    momento solo ayudamos a perritos que necesiten ya sea ayuda medica o necesiten Adopcion, contamos
+                    con
+                    grandes aliados para el tema de adopcion. Que esperas para tener tu mejor amigo!
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="adopcion" class="adopcion">
+        <h3>Adopcion de mascotas</h3>
+        <div class="adopcion-img">
+            <div class="img1-adopcion">
+                <p>Perros</p>
+                <img src="./Labrador.jpg" alt="Perros">
+                <form action="./index2.html">
+                    <button class="boton"></button>
+                </form>
+            </div>
+            <div class="img2-adopcion">
+                <p>Gatos</p>
+                <img src="./gatos.png" alt="Gatos">
+                <form action="./index3.html">
+                    <button class="boton"></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="reportar" class="reportar">
+        <h3>Reportar Abandono</h3>
+        <div>
+            <p>Reporta un abandono, puedes ser un colaborador, Diligencia el formulario. Nos comunicaremos contigo!</p>
+        </div>
+        <div>
+            <form action="">
+                <label for="nombre">Nombre Completo</label>
+                <br>
+                <input type="text" placeholder="Digita tu Nombre" required>
+                <br><br>
+                <label for="correo">Correo Electronico</label>
+                <br>
+                <input type="email" placeholder="Correo Electronico" required>
+                <br><br>
+                <label for="telefono">Numero Celular</label>
+                <br>
+                <input type="number" placeholder="Numero Celular" required>
+                <br><br>
+                <input id="Enviar" type="submit" onclick="enviarFormulario()" placeholder="Enviar">
+                <br>
+                <input  type="reset" placeholder="Borrar">
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section class="video" id="ayuda">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v_fyvq8eA7k?si=0JVREWHpkW_7TuI3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="donaciones">
+            <h2>Apoyanos!</h2>
+            <p>Quieres apoyar la fundacion y que nuestros perritos sigan teniendo un hogar de paso, aporta un granito
+                de arena para esta causa, nos ayudarias bastante, los peluditos te lo agradeceran.
+            </p>
+            <br>
+            <em>correo electronico - adoptaya@donaciones.gmail.com</em>
+            <em>celular principal para donaciones - 3125666666</em>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p><em>Contactenos</em></p>
+            <ul>
+                <li>☎️Bogotá D.C-Tel 3555555</li>
+                <li>☎️Manizales- Tel 3666666</li>
+                <li>☎️Pereira-Tel 3777777</li>
+            </ul>
+            <p><em>Derechos de autor</em></p>
+            <p><em>Yersson David Forero Diaz &copy;</em></p>
+        </div>
+    </footer>
+    <!--agregar redes sociales-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>
